@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('events.urls')),
     path('api/', include('dashboard.urls')),
+    path('', home), 
 ]
