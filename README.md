@@ -27,7 +27,7 @@ Keeping this flow consistent helped avoid confusion and made the system predicta
 ## Tech Stack
 
 * Django (Backend framework)
-* MySQL (Database)
+* MySQL (Development), SQLite (deployment)
 * Django ORM (Database interaction)
 * Thunder Client (API testing)
 
@@ -121,6 +121,8 @@ Errors are returned in a consistent format so they are easy to understand.
 I used MySQL with a simple relational design.
 
 I implemented soft delete using an `is_deleted` flag so that records are not permanently removed. This helps preserve data and avoids accidental loss.
+
+For deployment, I used SQLite to simplify setup and avoid external database configuration. During development, MySQL was used. The core backend logic and APIs remain unchanged across both setups.
 
 ---
 
