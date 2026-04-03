@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-17^^cwnooxx$8xsa@0oz61-r!kn@8e(d@nae9b0=x(1_y$m%b$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -116,7 +116,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-ALLOWED_HOSTS = ["*"]
+
 
 
 # Static files (CSS, JavaScript, Images)
