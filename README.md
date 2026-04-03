@@ -256,7 +256,7 @@ I also used Django admin to create users and verify data.
 
 ### Api Docs
 
-![API Docs](screenshots/api-docs)
+![API Docs](screenshots/api-docs.png)
 
 ### Admin Panel (Users)
 
