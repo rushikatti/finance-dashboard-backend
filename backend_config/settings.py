@@ -58,7 +58,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "finance_backend.urls"
+ROOT_URLCONF = 'backend_config.urls'
 
 TEMPLATES = [
     {
