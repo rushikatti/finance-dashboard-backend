@@ -44,7 +44,21 @@ def list_events(request):
 
     filters = request.GET.dict()
 
+
     events = get_events(filters)
+
+    sort = request.GET.get('sort', 'date')
+    events = events.order_by(sort)
+
+    page = int(request.GET.get('page', 1))
+    limit = int(request.GET.get('limit', 10))
+
+    start = (page - 1) * limit
+    end = start + limit
+
+    events = events[start:end]
+
+    
 
     data = list(events.values())
 

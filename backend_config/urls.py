@@ -20,8 +20,12 @@ from django.urls import path, include
 from django.http import HttpResponse
 from core.docs import api_docs
 
+
 def home(request):
-    return HttpResponse("Finance_Backend is running")
+    return JsonResponse({
+        "message": "Finance Backend API is live",
+        "docs": "/api/docs"
+    })
 
 urlpatterns = [
     path('admin/', admin.site.urls),
