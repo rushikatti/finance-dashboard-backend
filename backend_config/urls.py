@@ -22,10 +22,7 @@ from core.docs import api_docs
 
 
 def home(request):
-    return JsonResponse({
-        "message": "Finance Backend API is live",
-        "docs": "/api/docs"
-    })
+    return HttpResponse("Finance backend is running")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
