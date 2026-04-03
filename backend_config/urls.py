@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
+from core.docs import api_docs
 
 def home(request):
     return HttpResponse("Finance_Backend is running")
@@ -27,4 +28,5 @@ urlpatterns = [
     path('api/', include('events.urls')),
     path('api/', include('dashboard.urls')),
     path('', home), 
+    path('api/docs', api_docs),
 ]
