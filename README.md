@@ -254,7 +254,7 @@ I also used Django admin to create users and verify data.
 
 ## Screenshots
 
-### /api/docs
+### Api Docs
 
 ![API Docs](screenshots/api-docs)
 
