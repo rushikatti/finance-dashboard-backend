@@ -8,6 +8,15 @@ Instead of focusing on building a large system, I focused on designing something
 
 ---
 
+## Live Demo
+
+API Base url:
+https://finance-backend-x4cb.onrender.com
+
+API Docs:
+https://finance-backend-x4cb.onrender.com/api/docs
+
+
 ## How the System Works
 
 Every API in this project follows a simple and consistent flow:
@@ -244,6 +253,10 @@ I also used Django admin to create users and verify data.
 ---
 
 ## Screenshots
+
+### /api/docs
+
+![API Docs](screenshots/api-docs)
 
 ### Admin Panel (Users)
 
